@@ -9,11 +9,11 @@ tic = time.time()
 for i in range(1000000):
     v += v1[i] * v2[i]
 toc = time.time()
-print ("非向量化 - 计算时间" + str((toc - tic)*1000)+"ms"+"\n")
+print ("none vector - calculation time" + str((toc - tic)*1000)+"ms"+"\n")
 
 tic = time.time()
 v = np.dot(v1, v2)
 toc = time.time()
 
-print ("向量化-计算时间" + str((toc-tic)*1000)+"ms")
+print ("vector-calculation time" + str((toc-tic)*1000)+"ms")
 
